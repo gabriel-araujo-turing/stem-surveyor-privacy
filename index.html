@@ -66,6 +66,14 @@
       fields), submitted for quality review when you choose to validate.
     </li>
     <li>
+      <strong>Task content under review:</strong> the content of the task you are
+      reviewing (such as the task prompt, reference answer, and transcripts), which
+      may be rendered from associated content stores (Amazon S3 and Google Cloud
+      Storage), together with links to any files attached to the task. This is
+      captured once per task to give the review service the context needed to assess
+      your answer.
+    </li>
+    <li>
       <strong>Activity metrics:</strong> the survey identifier, your reviewer email
       as a submission identifier, and time-on-task measurements (time spent and
       whether a session expired).
@@ -79,7 +87,7 @@
   <h2>3. How we use the data</h2>
   <ul>
     <li>To authenticate you and confirm you are an authorized company reviewer.</li>
-    <li>To send your answers to our review service for automated quality assessment and to display feedback to you before submission.</li>
+    <li>To send your answers and the related task content to our review service for automated quality assessment and to display feedback to you before submission.</li>
     <li>To record submissions and time-on-task metrics for internal quality-control purposes.</li>
   </ul>
 
@@ -91,12 +99,18 @@
       cleared when you sign out or submit.
     </li>
     <li>
+      <strong>Read from content stores:</strong> to capture the task being reviewed,
+      the extension fetches task content served from Amazon S3 and Google Cloud
+      Storage. It reads this content only to extract the task text and file
+      references; it does not modify it.
+    </li>
+    <li>
       <strong>Transmitted over HTTPS to Google</strong> (<code>googleapis.com</code>)
       to verify your account during sign-in.
     </li>
     <li>
       <strong>Transmitted over HTTPS to our review service</strong> (hosted on Google
-      Cloud Run) to validate answers and record submissions.
+      Cloud Run) to validate answers, capture task context, and record submissions.
     </li>
   </ul>
 
