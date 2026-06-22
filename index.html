@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>STEM Surveyor — Privacy Policy</title>
+<style>
+  :root { color-scheme: light; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a2e;
+    line-height: 1.65;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+    background: #ffffff;
+  }
+  h1 { font-size: 1.9rem; margin-bottom: 4px; }
+  h2 { font-size: 1.2rem; margin-top: 40px; border-bottom: 1px solid #e6e6ef; padding-bottom: 6px; }
+  .meta { color: #6b6b7b; font-size: 0.9rem; margin-bottom: 8px; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  code { background: #f3f3f7; padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+  .limited-use {
+    background: #f7f9fc;
+    border: 1px solid #dfe5ee;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-top: 12px;
+  }
+  a { color: #2b59c3; }
+  footer { margin-top: 56px; color: #6b6b7b; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+
+  <h1>STEM Surveyor — Privacy Policy</h1>
+  <p class="meta">Last updated: [DATE]</p>
+
+  <p>
+    STEM Surveyor ("the extension") is an internal tool provided by [Company Name]
+    ("we", "us") for authorized company reviewers. This policy explains what data the
+    extension collects, how it is used, where it is stored, and with whom it is shared.
+    The extension is intended for internal workflow use and is not offered to the
+    general public.
+  </p>
+
+  <h2>1. Scope</h2>
+  <p>
+    The extension runs only on the company questionnaire page at
+    <code>https://feedback.anthropic.com/surveyor/*</code>. It is not active on any
+    other website, and it does not read, collect, or monitor your general browsing
+    activity or history.
+  </p>
+
+  <h2>2. Data we collect</h2>
+  <ul>
+    <li>
+      <strong>Account information (via Google Sign-In):</strong> your name, email
+      address, and profile picture. Sign-in is restricted to authorized company
+      Google accounts.
+    </li>
+    <li>
+      <strong>Questionnaire answers:</strong> the responses you enter on the survey
+      page (multiple-choice selections, free-text answers, and any justification
+      fields), submitted for quality review when you choose to validate.
+    </li>
+    <li>
+      <strong>Activity metrics:</strong> the survey identifier, your reviewer email
+      as a submission identifier, and time-on-task measurements (time spent and
+      whether a session expired).
+    </li>
+  </ul>
+  <p>
+    We do not collect financial, health, or location data, personal communications,
+    or web browsing history.
+  </p>
+
+  <h2>3. How we use the data</h2>
+  <ul>
+    <li>To authenticate you and confirm you are an authorized company reviewer.</li>
+    <li>To send your answers to our review service for automated quality assessment and to display feedback to you before submission.</li>
+    <li>To record submissions and time-on-task metrics for internal quality-control purposes.</li>
+  </ul>
+
+  <h2>4. Where data is stored and transmitted</h2>
+  <ul>
+    <li>
+      <strong>Locally:</strong> your signed-in profile and per-survey timing state
+      are stored on your device using Chrome's local storage. This local data is
+      cleared when you sign out or submit.
+    </li>
+    <li>
+      <strong>Transmitted over HTTPS to Google</strong> (<code>googleapis.com</code>)
+      to verify your account during sign-in.
+    </li>
+    <li>
+      <strong>Transmitted over HTTPS to our review service</strong> (hosted on Google
+      Cloud Run) to validate answers and record submissions.
+    </li>
+  </ul>
+
+  <h2>5. Data sharing</h2>
+  <p>
+    We do not sell or transfer your data to third parties. Data is shared only with
+    Google's authentication API (for sign-in) and with our own internal review
+    service. We do not use your data for advertising, credit assessment, or any
+    purpose unrelated to the extension's single purpose described above.
+  </p>
+
+  <h2>6. Data retention</h2>
+  <p>
+    Locally stored data is removed on sign-out or submission. Data received by our
+    review service is retained only as long as necessary for internal quality-control
+    purposes, in accordance with [Company Name]'s internal data retention practices.
+  </p>
+
+  <h2>7. Limited Use disclosure</h2>
+  <div class="limited-use">
+    The use of information received from Google APIs will adhere to the
+    <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use">Chrome Web Store User Data Policy</a>,
+    including the Limited Use requirements.
+  </div>
+
+  <h2>8. Contact</h2>
+  <p>
+    Questions about this policy can be directed to
+    <a href="mailto:[contact@company.com]">[contact@company.com]</a>.
+  </p>
+
+  <footer>
+    STEM Surveyor &middot; Internal tool &middot; [Company Name]
+  </footer>
+
+</body>
+</html>
